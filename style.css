@@ -1,0 +1,28 @@
+/* Stylesheet for Homework 3  */
+:root{
+	--blue-light:#e6f4ff;
+	--blue-dark:#01386a;
+	--white:#ffffff;
+}
+body{font-family: Arial, Helvetica, sans-serif; padding:20px; background:var(--blue-light); color:var(--blue-dark)}
+h1{margin-top:0}
+
+/* Page container stays white */
+main{max-width:900px;margin:0 auto;background:var(--white);padding:20px;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+
+/* Header and footer styling for blue color scheme */
+header, footer{background:var(--white);color:var(--blue-dark);padding:12px 20px}
+header a, footer a{color:var(--blue-dark)}
+
+h1{margin-top:0}
+table{width:100%;border-collapse:collapse}
+td{padding:8px;vertical-align:top}
+label{font-weight:600}
+input, select, textarea{width:100%;box-sizing:border-box;padding:6px;border:1px solid #ccc;border-radius:4px}
+.error{color:#a80000;font-size:0.95rem;min-height:1.2em;margin-top:4px}
+.hint{color:#666;font-size:0.85rem}
+.actions{text-align:right}
+#salaryDisplay{margin-top:6px;font-weight:700}
+button{padding:8px 12px;margin-left:8px}
+button[disabled]{opacity:0.5}
+@media (max-width:600px){td{display:block} .actions{text-align:left}}
